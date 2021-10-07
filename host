@@ -1,0 +1,5 @@
+heroku create
+heroku config:set RAILS_MASTER_KEY=f581f37686ef808906226c90eddb4dd7
+
+
+heroku config:set RAILS_MASTER_KEY=f581f37686ef808906226c90eddb4dd7
