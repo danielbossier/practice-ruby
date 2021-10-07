@@ -71,16 +71,52 @@
 # Input: [5, 17, -4, 20, 12]
 # Output: 20
 
-def max_number(array)
-  output = 0
-  i = 0
-  while i < array.length
-    if array[i] > output
-      output = array[i]
-    end
-    i += 1
+# def max_number(array)
+#   output = 0
+#   i = 0
+#   while i < array.length
+#     if array[i] > output
+#       output = array[i]
+#     end
+#     i += 1
+#   end
+#   return output
+# end
+
+# p max_number([5, 17, -4, 20, 12])
+
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+# Input: [1, 2, 3, 4]
+# Output: 24
+
+# Explanation: (1 x 2 x 3 x 4) = 24
+
+# def product(array)
+#   i = 0
+#   output = 1
+#   while i < array.length
+#     output *= array[i]
+#     i += 1
+#   end
+#   return output
+# end
+
+# p product([1, 2, 3, 4])
+
+# Given an array, write a function that returns an array that contains the original array’s values in reverse.
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [5, 4, 3, 2, 1]
+
+def reverse(array)
+  i = -1
+  output = []
+  array.each do |n|
+    output << array[i]
+    i -= 1
   end
   return output
 end
 
-p max_number([5, 17, -4, 20, 12])
+p reverse([1, 2, 3, 4, 5])
