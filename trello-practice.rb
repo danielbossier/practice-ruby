@@ -204,41 +204,22 @@
   string[i] = h
 =end
 
-def dupe(string)
-  output = string[0]
-  i = 1
-  while i < string.length
-    if output == string[i]
-      return output
-    else
-      output = string[i]
-      i += 1
-    end
-  end
-end
+# def dupe(string)
+#   output = string[0]
+#   i = 1
+#   while i < string.length
+#     if output == string[i]
+#       return output
+#     else
+#       output = string[i]
+#       i += 1
+#     end
+#   end
+# end
 
-p dupe("abcdefghijkkloooop")
+# p dupe("abcdefghijkkloooop")
 
 # Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
 
 #   Input: “hello, how are your porcupines today?”
 #   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
-
-#   output = ""
-# if string[i] = a, b, c, d
-#   string[i] = string[i].upcase
-
-def upcase(string)
-  index = 0
-  index2 = 1
-  new_string = ""
-  while index < string.length
-    new_string << string[index]
-    index += 2
-    new_string << string[index2].to_s.upcase
-    index2 += 2
-  end
-  return new_string
-end
-
-p upcase("hello, how are your porcupines today?")
