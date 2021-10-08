@@ -109,14 +109,136 @@
 # Input: [1, 2, 3, 4, 5]
 # Output: [5, 4, 3, 2, 1]
 
-def reverse(array)
-  i = -1
-  output = []
-  array.each do |n|
-    output << array[i]
-    i -= 1
-  end
+# def reverse(array)
+#   i = -1
+#   output = []
+#   array.each do |n|
+#     output << array[i]
+#     i -= 1
+#   end
+#   return output
+# end
+
+# p reverse([1, 2, 3, 4, 5])
+
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+=begin
+  define function reverse (string)
+  set i = string.length - 1
+  set an output = ""
+  while loop through string and "add" elements based on their index to new variable output
+  decrease index by one within loop
+  end loop
   return output
+  call function
+=end
+
+# def reverse(string)
+#   output = ""
+#   i = string.length - 1
+#   while i >= 0
+#     output += string[i]
+#     i -= 1
+#   end
+#   return output
+# end
+
+# p reverse("abcde")
+
+# Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+# Input: “i hate $ but i love money i know i know im crazy”
+# Output: true
+
+# Input: “abcdefghijklmnopqrstuvwxyz”
+# Output: false
+
+=begin
+  define function $_hunt(string)
+  while loop
+  set up conditional
+  iterate through length of string comparing index to $
+  if $ is found break loop and print true
+  if $ is not found return false
+  call function
+=end
+
+# def money_hunt(string)
+#   i = 0
+#   while i < string.length
+#     if string[i] == "$"
+#       return true
+#       break
+#     end
+#     i += 1
+#   end
+#   return false
+# end
+
+# p money_hunt("i hate but i love money i know i know im crazy")
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+=begin
+  define function dupe(string)
+  output = string[0]
+  i = 1
+  while loop i < string.length
+    if output == string[i]
+      return output
+    else
+      output = string[i]
+      i += 1
+    end
+  end
+
+  p dupe("abcdefghhijkkloooop")
+  output = h
+  string[i] = h
+=end
+
+def dupe(string)
+  output = string[0]
+  i = 1
+  while i < string.length
+    if output == string[i]
+      return output
+    else
+      output = string[i]
+      i += 1
+    end
+  end
 end
 
-p reverse([1, 2, 3, 4, 5])
+p dupe("abcdefghijkkloooop")
+
+# Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+#   Input: “hello, how are your porcupines today?”
+#   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+#   output = ""
+# if string[i] = a, b, c, d
+#   string[i] = string[i].upcase
+
+def upcase(string)
+  index = 0
+  index2 = 1
+  new_string = ""
+  while index < string.length
+    new_string << string[index]
+    index += 2
+    new_string << string[index2].to_s.upcase
+    index2 += 2
+  end
+  return new_string
+end
+
+p upcase("hello, how are your porcupines today?")
