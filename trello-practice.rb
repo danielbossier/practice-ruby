@@ -223,3 +223,64 @@
 
 #   Input: “hello, how are your porcupines today?”
 #   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+# def capitalize(string)
+#   output = ""
+#   i = 0
+#   i2 = 1
+#   while i < string.length
+#     output << string[i]
+#     output << string[i2].to_s.upcase
+#     i += 2
+#     i2 += 2
+#   end
+#   return output
+# end
+
+# p capitalize("hello, how are your porcupines today?")
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+=begin
+create a function palindrome?(string)  
+output = ""
+set an index of 0
+while loop based on string.length through the string and compare the first character to the last character
+using an idex of 0, first character will be string[i]
+accessing the last character, means -(i + 1)
+string[i] != string[-(i + 1)]
+within the loop, incriment the index + 1
+
+
+while i < string.length
+  if conditional
+    string[i] != string[-i]
+    output = "false"
+    return output
+  elsif
+    i += 1
+
+return output it will be either "true", or "false"
+=end
+
+def palindrome?(string)
+  output = "true"
+  i = 0
+  while i < string.length
+    if string[0] != string[-(i + 1)]
+      output = "false"
+      return output
+    else
+      i += 1
+    end
+  end
+  return output
+end
+
+p palindrome?("racecar")
