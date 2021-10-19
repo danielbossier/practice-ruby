@@ -412,3 +412,19 @@ return output it will be either "true", or "false"
 #     { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
 #     { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
 #   ])
+
+# Given a hash, return a flat array containing all the hash’s keys and values.
+
+# Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+# Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+# def flattenhash(hash)
+#   flat_hash = []
+#   hash.each do |key, value|
+#     flat_hash << key
+#     flat_hash << value
+#   end
+#   return flat_hash
+# end
+
+# p flattenhash({ "a" => 1, "b" => 2, "c" => 3, "d" => 4 })
