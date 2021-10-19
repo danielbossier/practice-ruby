@@ -428,3 +428,43 @@ return output it will be either "true", or "false"
 # end
 
 # p flattenhash({ "a" => 1, "b" => 2, "c" => 3, "d" => 4 })
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# def flip_hash(hash)
+#   new_hash = {}
+#   hash.each do |key, value|
+#     new_hash[value] = key
+#   end
+#   return new_hash
+# end
+
+# p flip_hash({ "a" => 1, "b" => 2, "c" => 3 })
+
+# You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
+
+# Input:
+# First argument: ["a", "e", "i", "o", "u"]
+# Second argument: 1
+
+# Output:
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+def etl(array)
+  new_hash = {}
+  array.each do |key|
+    new_hash[key] = 1
+  end
+  return new_hash
+end
+
+p etl(["a", "e", "i", "o", "u"])
