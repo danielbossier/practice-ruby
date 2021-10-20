@@ -505,3 +505,49 @@ return output it will be either "true", or "false"
 #     8 => ["J", "X"],
 #     10 => ["Q", "Z"],
 #   })
+
+# Find the largest product of any two numbers within a given array.
+
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63 (-9 * -7)
+# Input: [5, 3, 6]
+# Output: 30
+
+=begin
+  write a function largest_product(array)
+  largest = "1"
+  i1 set to 0
+  i2 set to 1
+  iterate through the input using a while loop
+  while i1 < array.length
+    sum = array[i1] * array.[i2]
+    if sum is > than the largest
+      largest = sum
+    else
+      i2 += 1
+    end
+    i1 += 1
+    i2 = i1 + 1
+  end
+  return largest
+=end
+
+def largest_product(array)
+  i1 = 0
+  i2 = 1
+  largest = array[i1] * array[i2]
+  while i1 < (array.length - 1)
+    while i2 < array.length
+      sum = array[i1] * array[i2]
+      if sum > largest
+        largest = sum
+      end
+      i2 += 1
+    end
+    i1 += 1
+    i2 = i1 + 1
+  end
+  return largest
+end
+
+p largest_product([5, 3, 6])
