@@ -532,22 +532,34 @@ return output it will be either "true", or "false"
   return largest
 =end
 
-def largest_product(array)
-  i1 = 0
-  i2 = 1
-  largest = array[i1] * array[i2]
-  while i1 < (array.length - 1)
-    while i2 < array.length
-      sum = array[i1] * array[i2]
-      if sum > largest
-        largest = sum
-      end
-      i2 += 1
-    end
-    i1 += 1
-    i2 = i1 + 1
+# def largest_product(array)
+#   i1 = 0
+#   i2 = 1
+#   largest = array[i1] * array[i2]
+#   while i1 < (array.length - 1)
+#     while i2 < array.length
+#       sum = array[i1] * array[i2]
+#       if sum > largest
+#         largest = sum
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#     i2 = i1 + 1
+#   end
+#   return largest
+# end
+
+# p largest_product([5, 3, 6])
+
+def print_number(n)
+  if n % 3 == 0 || n % 5 == 0
+    p "fizzbuzz"
+  elsif n % 3 == 0
+    p "fizz"
+  elsif n % 5 == 0
+    p "buzz"
   end
-  return largest
 end
 
-p largest_product([5, 3, 6])
+p print_number(3)
