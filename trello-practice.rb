@@ -553,13 +553,17 @@ return output it will be either "true", or "false"
 # p largest_product([5, 3, 6])
 
 def print_number(n)
-  if n % 3 == 0 || n % 5 == 0
-    p "fizzbuzz"
+  message = ""
+  if n % 3 == 0 && n % 5 == 0
+    message = "fizzbuzz"
   elsif n % 3 == 0
-    p "fizz"
+    message = "fizz"
   elsif n % 5 == 0
-    p "buzz"
+    message = "buzz"
+  else
+    message = "not divisible by 3 or 5"
   end
+  return message
 end
 
-p print_number(3)
+p print_number(10)
