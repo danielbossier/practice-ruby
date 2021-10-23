@@ -552,18 +552,42 @@ return output it will be either "true", or "false"
 
 # p largest_product([5, 3, 6])
 
-def print_number(n)
-  message = ""
-  if n % 3 == 0 && n % 5 == 0
-    message = "fizzbuzz"
-  elsif n % 3 == 0
-    message = "fizz"
-  elsif n % 5 == 0
-    message = "buzz"
-  else
-    message = "not divisible by 3 or 5"
+# def print_number(n)
+#   message = ""
+#   if n % 3 == 0 && n % 5 == 0
+#     message = "fizzbuzz"
+#   elsif n % 3 == 0
+#     message = "fizz"
+#   elsif n % 5 == 0
+#     message = "buzz"
+#   else
+#     message = "not divisible by 3 or 5"
+#   end
+#   return message
+# end
+
+# p print_number(10)
+
+# Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+# Input: "ABCDEFG", "ABCXEOG"
+# Output: 2
+
+# Explanation: While the A, B, C, E, and G are in the same place for both strings, they have different characters in the other spaces. Since there are 2 such spaces that are different (the D and F in the first string), we return 2.
+
+# Input: "ABCDEFG", "ABCDEFG",
+# Output: 0
+
+def hamming(string1, string2)
+  count = 0
+  i = 0
+  while i < string1.length
+    if string1[i] != string2[i]
+      count += 1
+    end
+    i += 1
   end
-  return message
+  return count
 end
 
-p print_number(10)
+p hamming("ABCDEFG", "ABCDEOG")
