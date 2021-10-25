@@ -281,7 +281,7 @@ return output it will be either "true", or "false"
 #   return true
 # end
 
-# p palindrome?("whatupbutt")
+# p palindrome?("racecar")
 
 # Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if they'd order one of each food from the entire menu.
 
@@ -644,25 +644,56 @@ return output it will be either "true", or "false"
 # ]
 # }
 
-def author_list(array)
-  new_hash = {}
-  i = 0
-  while i < array.length
-    if array[i][:author] == "J. R. R. Tolkien"
-      new_hash = array[i][:author]
-      new_hash << array[i].to_s
-    end
-    i += 1
-  end
-  return new_hash
-end
+# def author_list(array)
+#   new_hash = {}
+#   i = 0
+#   while i < array.length
+#     if array[i][:author] == "J. R. R. Tolkien"
+#       new_hash = array[i][:author]
+#       new_hash << array[i].to_s
+#     end
+#     i += 1
+#   end
+#   return new_hash
+# end
 
-p author_list([
-    { title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
-    { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
-    { title: "1984", author: "George Orwell", year: 1949 },
-    { title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
-    { title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
-    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
-    { title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 },
-  ])
+# p author_list([
+#     { title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
+#     { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+#     { title: "1984", author: "George Orwell", year: 1949 },
+#     { title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
+#     { title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
+#     { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+#     { title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 },
+#   ])
+
+# Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
+
+# A "100 Coolio Array" meets the following criteria:
+
+# Its first and last numbers add up to 100,
+# Its second and second-to-last numbers add up to 100,
+# Its third and third-to-last numbers add up to 100,
+# and so on and so forth.
+
+# Here are examples of 100 Coolio Arrays:
+
+# [1, 2, 3, 97, 98, 99]
+# [90, 20, 70, 100, 30, 80, 10]
+
+# def coolio?(array)
+#   i = 0
+#   while i <= array.length / 2
+#     if array[i] + array[-(i + 1)] == 100
+#       i += 1
+#       if array[array.length / 2.0] == 100
+#         return true
+#       end
+#     else
+#       return false
+#     end
+#   end
+#   return true
+# end
+
+# p coolio?([90, 20, 70, 100, 30, 80, 10])
