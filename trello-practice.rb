@@ -684,16 +684,55 @@ return output it will be either "true", or "false"
 # def coolio?(array)
 #   i = 0
 #   while i <= array.length / 2
-#     if array[i] + array[-(i + 1)] == 100
-#       i += 1
-#       if array[array.length / 2.0] == 100
-#         return true
+#     if (array.length % 2 != 0)
+#       (array[array.length / 2.0] == 100)
+#       if (array[i] + array[-(i + 1)]) == 100
+#         i += 1
 #       end
+#       return "yes"
+#     end
+#     if (array[i] + array[-(i + 1)]) == 100
+#       return true
 #     else
 #       return false
 #     end
 #   end
-#   return true
 # end
 
-# p coolio?([90, 20, 70, 100, 30, 80, 10])
+# p coolio?([1, 2, 3, 100, 97, 98, 99])    #true
+# p coolio?([1, 2, 3, 97, 98, 99])         #true
+# p coolio?([90, 20, 70, 100, 30, 80, 10]) #true
+# p coolio?([90, 25, 70, 100, 30, 80, 10]) #false
+# p coolio?([90, 20, 70, 80, 30, 80, 10])  #false
+
+# Write a function to find the longest common prefix string amongst an array of strings.
+
+# If there is no common prefix, return an empty string "".
+
+# Example 1:
+
+# Input: ["flowler","flow","flight"]
+# Output: "fl"
+# Example 2:
+
+# Input: ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+# Note:
+
+# All given inputs are in lowercase letters a-z.
+
+def common_prefix(array)
+  output = ""
+  i = 0
+  while i < array.length
+    if array[0][i] == array[1][i] && array[0][i] == array[2][i]
+      output += array[0][i]
+    end
+    i += 1
+  end
+  return output
+end
+
+p common_prefix(["flower", "flow", "flight"])
+p common_prefix(["dog", "racecar", "car"])
