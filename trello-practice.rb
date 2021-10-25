@@ -722,17 +722,39 @@ return output it will be either "true", or "false"
 
 # All given inputs are in lowercase letters a-z.
 
-def common_prefix(array)
-  output = ""
-  i = 0
-  while i < array.length
-    if array[0][i] == array[1][i] && array[0][i] == array[2][i]
-      output += array[0][i]
+# def common_prefix(array)
+#   output = ""
+#   i = 0
+#   while i < array.length
+#     if array[0][i] == array[1][i] && array[0][i] == array[2][i]
+#       output += array[0][i]
+#     end
+#     i += 1
+#   end
+#   return output
+# end
+
+# p common_prefix(["flower", "flow", "flight"])
+# p common_prefix(["dog", "racecar", "car"])
+
+# Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+# Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+# Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+def string_combo(array1, array2)
+  i1 = 0
+  i2 = 0
+  output = []
+  while i1 < array1.length
+    while i2 < array2.length
+      output << array1[i1] + array2[i2]
+      i2 += 1
     end
-    i += 1
+    i1 += 1
+    i2 = 0
   end
   return output
 end
 
-p common_prefix(["flower", "flow", "flight"])
-p common_prefix(["dog", "racecar", "car"])
+p string_combo(["a", "b", "c"], ["d", "e", "f", "g"])
