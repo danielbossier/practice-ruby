@@ -686,23 +686,25 @@ return output it will be either "true", or "false"
 #   return "yes"
 # end
 
-# def coolio?(array)
-#   i = 0
-#   while i <= (array.length / 2)
-#     if (array[i] + array[-(i + 1)]) == 100
-#       i += 1
-#       return true
-#     else
-#       return false
-#     end
-#   end
-# end
+def coolio?(array)
+  i = 0
+  while i <= (array.length / 2)
+    if (array[i] + array[-(i + 1)]) == 100
+      i += 1
+    end
+  end
+  if (array.length).odd? == true
+    array[array.length / 2] != 100
+    return "false"
+  end
+  return false
+end
 
-# p coolio?([1, 2, 3, 100, 97, 98, 99])    #true
-# p coolio?([1, 2, 3, 97, 98, 99])         #true
-# p coolio?([90, 20, 70, 100, 30, 80, 10]) #true
-# p coolio?([90, 25, 70, 100, 30, 80, 10]) #false
-# p coolio?([90, 20, 70, 80, 30, 80, 10])  #false
+p coolio?([1, 2, 3, 100, 97, 98, 99])    #true
+p coolio?([1, 2, 3, 97, 98, 99])         #true
+p coolio?([90, 20, 70, 100, 30, 80, 10]) #true
+p coolio?([90, 25, 70, 100, 30, 80, 10]) #false
+p coolio?([90, 20, 70, 80, 30, 80, 10])  #false
 
 # Write a function to find the longest common prefix string amongst an array of strings.
 
@@ -788,22 +790,22 @@ return output it will be either "true", or "false"
 end
 =end
 
-def find_ten(array)
-  i1 = 0
-  output = []
-  while i1 < array.length
-    i2 = i1 + 1
-    while i2 <= array.length - 1
-      if array[i1] + array[i2] == 10
-        output << array[i1]
-        output << array[i2]
-        return output
-      end
-      i2 += 1
-    end
-    i1 += 1
-  end
-  return false
-end
+# def find_ten(array)
+#   i1 = 0
+#   output = []
+#   while i1 < array.length
+#     i2 = i1 + 1
+#     while i2 <= array.length - 1
+#       if array[i1] + array[i2] == 10
+#         output << array[i1]
+#         output << array[i2]
+#         return output
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#   end
+#   return false
+# end
 
-p find_ten([1, 9, 2, 8])
+# p find_ten([1, 9, 2, 8])
