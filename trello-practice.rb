@@ -681,17 +681,16 @@ return output it will be either "true", or "false"
 # [1, 2, 3, 97, 98, 99]
 # [90, 20, 70, 100, 30, 80, 10]
 
+# if (array.length % 2 != 0)
+#   (array[array.length / 2.0] == 100)
+#   return "yes"
+# end
+
 # def coolio?(array)
 #   i = 0
-#   while i <= array.length / 2
-#     if (array.length % 2 != 0)
-#       (array[array.length / 2.0] == 100)
-#       if (array[i] + array[-(i + 1)]) == 100
-#         i += 1
-#       end
-#       return "yes"
-#     end
+#   while i <= (array.length / 2)
 #     if (array[i] + array[-(i + 1)]) == 100
+#       i += 1
 #       return true
 #     else
 #       return false
@@ -742,19 +741,69 @@ return output it will be either "true", or "false"
 # Input: ["a", "b", "c"], ["d", "e", "f", "g"]
 # Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
 
-def string_combo(array1, array2)
+# def string_combo(array1, array2)
+#   i1 = 0
+#   i2 = 0
+#   output = []
+#   while i1 < array1.length
+#     while i2 < array2.length
+#       output << array1[i1] + array2[i2]
+#       i2 += 1
+#     end
+#     i1 += 1
+#     i2 = 0
+#   end
+#   return output
+# end
+
+# p string_combo(["a", "b", "c"], ["d", "e", "f", "g"])
+
+# Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+
+# Specifically use nested loops to solve this exercise even though there are other approaches as well.
+
+# Input: [2, 5, 3, 1, 0, 7, 11]
+# Output: [3, 7]
+
+# Input: [1, 2, 3, 4, 5]
+# Output: false (While 1, 2, 3, and 4 altogether add up to 10, we're seeking just one pair of numbers.)
+
+=begin
+  create a function "find_ten"(array)
   i1 = 0
-  i2 = 0
   output = []
-  while i1 < array1.length
-    while i2 < array2.length
-      output << array1[i1] + array2[i2]
+  while loop with first index < array.length
+    while loop with second index < array.length - 1
+      i2 = i1 + 1
+      if array[i1] + array[i2] == 10
+        output << array[i1] + array[i2]
+      end
       i2 += 1
     end
     i1 += 1
-    i2 = 0
   end
-  return output
+  if output != 10
+    return false
+  end
+end
+=end
+
+def find_ten(array)
+  i1 = 0
+  output = []
+  while i1 < array.length
+    i2 = i1 + 1
+    while i2 <= array.length - 1
+      if array[i1] + array[i2] == 10
+        output << array[i1]
+        output << array[i2]
+        return output
+      end
+      i2 += 1
+    end
+    i1 += 1
+  end
+  return false
 end
 
-p string_combo(["a", "b", "c"], ["d", "e", "f", "g"])
+p find_ten([1, 9, 2, 8])
