@@ -809,3 +809,13 @@ end
 # end
 
 # p find_ten([1, 9, 2, 8])
+
+# def even_numbers()
+#   number = 2
+#   50.times do
+#     p number
+#     number += 2
+#   end
+# end
+
+# even_numbers
