@@ -146,12 +146,29 @@ def second_character(string)
 # p no_repeats("aabbc") #=> "abc"
 # p no_repeats("Hello") #=> "Helo"
 
-array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
-new_array = []
-array.each do |item|
-  if item[:price] > 5
-    new_array << item
-  end
-end
+# array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# new_array = []
+# array.each do |item|
+#   if item[:price] > 5
+#     new_array << item
+#   end
+# end
 
-p new_array
+# p new_array
+
+# def is_palindrome(x)
+#   x = x.to_s
+#   i = 0
+#   if x.length == 1
+#     return true
+#   end
+#   while i < x.length / 2
+#     if x[i] != x[-(i + 1)]
+#       return false
+#     end
+#     i += 1
+#   end
+#   return true
+# end
+
+# p is_palindrome(2222111112222)
