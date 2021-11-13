@@ -172,3 +172,27 @@ def second_character(string)
 # end
 
 # p is_palindrome(2222111112222)
+
+def longest_common_prefix(strs)
+  longest = ""
+  i = 0
+  if strs == [""]
+    return longest
+  end
+  while i < strs.length
+    if strs.length == 3 &&
+       strs[0][i] == strs[1][i] && strs[0][i] == strs[2][i]
+      longest << strs[0][i].to_s
+    elsif strs.length == 2 &&
+          strs[0][i] == strs[1][i]
+      longest << strs[0][i].to_s
+    elsif strs.length == 1
+      longest = strs[0]
+    end
+    i += 1
+  end
+  return longest
+end
+
+p longest_common_prefix(["a", "b"])
+p longest_common_prefix(["dog", "racecar", "car"])
