@@ -198,12 +198,29 @@ def second_character(string)
 # p longest_common_prefix(["a", "b"])
 # p longest_common_prefix(["dog", "racecar", "car"])
 
-def longest_common_prefix(strs)
-  return "" if strs.empty?
-  min, max = strs.minmax
-  idx = min.size.times { |i| break i if min[i] != max[i] }
-  min[0...idx]
+# def longest_common_prefix(strs)
+#   return "" if strs.empty?
+#   min, max = strs.minmax
+#   idx = min.size.times { |i| break i if min[i] != max[i] }
+#   min[0...idx]
+# end
+
+# p longest_common_prefix(["flower", "flow", "flight"])
+# p longest_common_prefix(["dog", "racecar", "car"])
+
+# nums = [0, 0, 1, 1, 1, 2, "a", 3, 3, 4].partition { |e| e.is_a?(Integer) }.flat_map(&:sort)
+# p nums
+
+def remove_duplicates(nums)
+  i1 = 0
+  while i1 < nums.length
+    if nums[i1] == nums[i1 + 1]
+      nums[i1] = ""
+    end
+    i1 += 1
+  end
+
+  return nums.partition { |e| e.is_a?(Integer) }.flat_map(&:sort)
 end
 
-p longest_common_prefix(["flower", "flow", "flight"])
-p longest_common_prefix(["dog", "racecar", "car"])
+p remove_duplicates([1, 1, 2, 3, 3, 3, 4, 4, 4, 5, 5])
