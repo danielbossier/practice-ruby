@@ -211,16 +211,33 @@ def second_character(string)
 # nums = [0, 0, 1, 1, 1, 2, "a", 3, 3, 4].partition { |e| e.is_a?(Integer) }.flat_map(&:sort)
 # p nums
 
-def remove_duplicates(nums)
-  i1 = 0
-  while i1 < nums.length
-    if nums[i1] == nums[i1 + 1]
-      nums[i1] = ""
-    end
-    i1 += 1
-  end
+# def remove_duplicates(nums)
+#   i1 = 0
+#   while i1 < nums.length
+#     if nums[i1] == nums[i1 + 1]
+#       nums[i1] = ""
+#     end
+#     i1 += 1
+#   end
 
-  return nums.partition { |e| e.is_a?(Integer) }.flat_map(&:sort)
+#   return nums.partition { |e| e.is_a?(Integer) }.flat_map(&:sort)
+# end
+
+# p remove_duplicates([1, 1, 2, 3, 3, 3, 4, 4, 4, 5, 5])
+
+def divisors(n)
+  answer = []
+  i = 2
+  (n / 2).times do
+    if n % i == 0
+      answer << (n / i)
+    end
+    i += 1
+  end
+  if answer == [] || answer == [1]
+    return "#{n} is prime"
+  end
+  return answer
 end
 
-p remove_duplicates([1, 1, 2, 3, 3, 3, 4, 4, 4, 5, 5])
+p divisors(13)
