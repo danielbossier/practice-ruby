@@ -225,19 +225,57 @@ def second_character(string)
 
 # p remove_duplicates([1, 1, 2, 3, 3, 3, 4, 4, 4, 5, 5])
 
-def divisors(n)
-  answer = []
-  i = 2
-  (n / 2).times do
-    if n % i == 0
-      answer << (n / i)
-    end
-    i += 1
-  end
-  if answer == [] || answer == [1]
-    return "#{n} is prime"
-  end
-  return answer
+# def divisors(n)
+#   answer = []
+#   i = 2
+#   (n / 2).times do
+#     if n % i == 0
+#       answer << (n / i)
+#     end
+#     i += 1
+#   end
+#   if answer == [] || answer == [1]
+#     return "#{n} is prime"
+#   end
+#   return answer
+# end
+
+# p divisors(13)
+
+# def get_sum(a, b)
+#   a, b = b, a if a > b
+#   return (a..b).sum
+# end
+
+# p get_sum(1, 5)
+
+# def printer_error(s)
+#   i = 0
+#   errors = 0
+#   total = s.length
+#   while i < s.length
+#     if s[i] == "n" ||
+#       s[i] == "o" ||
+#       s[i] == "p" ||
+#       s[i] == "q" ||
+#       s[i] == "r" ||
+#       s[i] == "s" ||
+#       s[i] == "t" ||
+#       s[i] == "u" ||
+#       s[i] == "v" ||
+#       s[i] == "w" ||
+#       s[i] == "x" ||
+#       s[i] == "y" ||
+#       s[i] == "z"
+#       errors += 1
+#     end
+#     i += 1
+#   end
+#   return "#{errors}/#{total}"
+# end
+
+def printer_error(s)
+  "#{s.count("n-z")}/#{s.length}"
 end
 
-p divisors(13)
+p printer_error("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
