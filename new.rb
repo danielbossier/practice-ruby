@@ -280,14 +280,36 @@ def second_character(string)
 
 # p printer_error("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
 
-def fiz?(n)
-  if n % 3 == 0 && n % 5 == 0
-    return "FIZZBUZZ"
-  elsif n % 3 == 0
-    return "FIZZ"
-  elsif n % 5 == 0
-    return "BUZZ"
-  end
-end
+# def fiz?(n)
+#   if n % 3 == 0 && n % 5 == 0
+#     return "FIZZBUZZ"
+#   elsif n % 3 == 0
+#     return "FIZZ"
+#   elsif n % 5 == 0
+#     return "BUZZ"
+#   end
+# end
 
-p fiz?(10)
+# p fiz?(10)
+
+# def ten?(array)
+#   i = 0
+#   output = []
+#   while i < array.length
+#     i2 = i + 1
+#     while i2 <= array.length - 1
+#       if array[i] + array[i2] == 10
+#         output << array[i]
+#         output << array[i2]
+#         return output
+#       end
+#       i2 += 1
+#     end
+#     i += 1
+#   end
+#   if output == []
+#     return "false"
+#   end
+# end
+
+# p ten?([2, 5, 8, 1, 0, 7, 11])
