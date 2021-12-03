@@ -274,8 +274,20 @@ def second_character(string)
 #   return "#{errors}/#{total}"
 # end
 
-def printer_error(s)
-  "#{s.count("n-z")}/#{s.length}"
+# def printer_error(s)
+#   "#{s.count("n-z")}/#{s.length}"
+# end
+
+# p printer_error("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
+
+def fiz?(n)
+  if n % 3 == 0 && n % 5 == 0
+    return "FIZZBUZZ"
+  elsif n % 3 == 0
+    return "FIZZ"
+  elsif n % 5 == 0
+    return "BUZZ"
+  end
 end
 
-p printer_error("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
+p fiz?(10)
