@@ -313,3 +313,11 @@ def second_character(string)
 # end
 
 # p ten?([2, 5, 8, 1, 0, 7, 11])
+
+def leap?(n)
+  if n % 4 == 0 && n % 100 != 0 || n % 400 == 0
+    return true
+  else return false   end
+end
+
+p leap?(1996)
