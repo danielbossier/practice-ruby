@@ -314,10 +314,25 @@ def second_character(string)
 
 # p ten?([2, 5, 8, 1, 0, 7, 11])
 
-def leap?(n)
-  if n % 4 == 0 && n % 100 != 0 || n % 400 == 0
-    return true
-  else return false   end
+# def leap?(n)
+#   if n % 4 == 0 && n % 100 != 0 || n % 400 == 0
+#     return true
+#   else return false   end
+# end
+
+# p leap?(1996)
+
+def fib(n)
+  n = n - 1
+  x = 0
+  y = 1
+  output = 0
+  n.times do
+    output = x + y
+    x = y
+    y = output
+  end
+  return x
 end
 
-p leap?(1996)
+p fib(9)
