@@ -921,3 +921,31 @@ p common_prefix
 # target = 18
 
 # p two_sum(nums, target)
+
+# def money(string)
+#   i = 0
+#   while i < string.length
+#     if string[i] == "$"
+#       return true
+#     end
+#     i += 1
+#   end
+#   return false
+# end
+
+# p money("i hate but i love money i know i know im crazy")
+
+# def dupe(string)
+#   i = 0
+#   output = ""
+#   while i < string.length
+#     if string[i] == string[i + 1]
+#       output = string[i]
+#       return output
+#     end
+#     i += 1
+#   end
+#   return output
+# end
+
+# p dupe("abcdefghijkloppp")
