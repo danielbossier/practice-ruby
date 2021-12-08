@@ -949,3 +949,20 @@ p common_prefix
 # end
 
 # p dupe("abcdefghijkloppp")
+
+# def mesh(string1, string2)
+#   i = 0
+#   i2 = 0
+#   output = []
+#   while i < string1.length
+#     while i2 < string2.length
+#       output << (string1[i] + string2[i2])
+#       i2 += 1
+#     end
+#     i += 1
+#     i2 = 0
+#   end
+#   return output
+# end
+
+# p mesh(["a", "b", "c"], ["d", "e", "f", "g"])

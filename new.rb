@@ -322,17 +322,17 @@ def second_character(string)
 
 # p leap?(1996)
 
-def fib(n)
-  n = n - 1
-  x = 0
-  y = 1
-  output = 0
-  n.times do
-    output = x + y
-    x = y
-    y = output
-  end
-  return x
-end
+# def fib(n)
+#   n = n - 1
+#   x = 0
+#   y = 1
+#   output = 0
+#   n.times do
+#     output = x + y
+#     x = y
+#     y = output
+#   end
+#   return x
+# end
 
-p fib(9)
+# p fib(9)
