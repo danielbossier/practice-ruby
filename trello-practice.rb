@@ -966,3 +966,20 @@ p common_prefix
 # end
 
 # p mesh(["a", "b", "c"], ["d", "e", "f", "g"])
+
+# def combine(array)
+#   i = 0
+#   i2 = 1
+#   output = []
+#   while i < array.length
+#     while i2 <= array.length - 1
+#       output << (array[i] + array[i2])
+#       i2 += 1
+#     end
+#     i += 1
+#     i2 = 0
+#   end
+#   return output
+# end
+
+# p combine(["a", "b", "c", "d"])
