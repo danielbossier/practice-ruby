@@ -983,3 +983,15 @@ p common_prefix
 # end
 
 # p combine(["a", "b", "c", "d"])
+
+def double(array)
+  new_array = []
+  i = 0
+  while i < array.length
+    new_array << array[i] * 2
+    i += 1
+  end
+  return new_array
+end
+
+p double([4, 2, 5, 99, -4])
