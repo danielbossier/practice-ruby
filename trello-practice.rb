@@ -1009,3 +1009,11 @@ p common_prefix
 # end
 
 # p max([5, 17, -4, 20, 12])
+
+# def product(array)
+#   output = 0
+#   output = array.inject(:*)
+#   return output
+# end
+
+# p product([1, 2, 3, 4])
