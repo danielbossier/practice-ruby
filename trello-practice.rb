@@ -1018,15 +1018,21 @@ p common_prefix
 
 # p product([1, 2, 3, 4])
 
-def capitalize(string)
-  output = ""
-  i = 0
-  while i < string.length - 1
-    output << string[i]
-    output << string[i + 1].upcase
-    i += 2
-  end
-  return output
-end
+# def capitalize(string)
+#   output = ""
+#   i = 0
+#   while i < string.length - 1
+#     output << string[i]
+#     output << string[i + 1].upcase
+#     i += 2
+#   end
+#   return output
+# end
 
-p capitalize("hello, how are your porcupines today?")
+# p capitalize("hello, how are your porcupines today?")
+
+# def reverse_words(string)
+#   p string.split.reverse.join(" ")
+# end
+
+# p reverse_words("popcorn is so cool isn't it yeah i thought so")
