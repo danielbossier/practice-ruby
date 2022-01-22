@@ -1036,3 +1036,17 @@ p common_prefix
 # end
 
 # p reverse_words("popcorn is so cool isn't it yeah i thought so")
+
+# def hamming(string1, string2)
+#   i = 0
+#   output = 0
+#   while i < string1.length
+#     if string1[i] != string2[i]
+#       output += 1
+#     end
+#     i += 1
+#   end
+#   return output
+# end
+
+# p hamming("ABCDEFG", "ABCXEOG")
