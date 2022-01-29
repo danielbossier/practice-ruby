@@ -1050,3 +1050,19 @@ p common_prefix
 # end
 
 # p hamming("ABCDEFG", "ABCXEOG")
+
+# def mesh(array1, array2)
+#   i1 = 0
+#   output = []
+#   while i1 < array1.length
+#     i2 = 0
+#     while i2 < array2.length
+#       output << array1[i1] + array2[i2]
+#       i2 += 1
+#     end
+#     i1 += 1
+#   end
+#   return output
+# end
+
+# p mesh(["a", "b", "c"], ["d", "e", "f", "g"])
