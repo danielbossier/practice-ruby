@@ -1066,3 +1066,21 @@ p common_prefix
 # end
 
 # p mesh(["a", "b", "c"], ["d", "e", "f", "g"])
+
+# def mesh(array)
+#   i1 = 0
+#   output = []
+#   while i1 < array.length
+#     i2 = 0
+#     while i2 < array.length
+#       if array[i1] != array[i2]
+#         output << array[i1] + array[i2]
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#   end
+#   return output
+# end
+
+# p mesh(["a", "b", "c", "d"])
