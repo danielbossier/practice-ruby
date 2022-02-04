@@ -1085,29 +1085,45 @@ p common_prefix
 
 # p mesh(["a", "b", "c", "d"])
 
-def frequent_letter(string)
-  i = 0
-  letter_count = {}
-  most_frequent_letter = ""
-  most_frequent_count = 0
+# def frequent_letter(string)
+#   i = 0
+#   letter_count = {}
+#   most_frequent_letter = ""
+#   most_frequent_count = 0
 
-  while i < string.length
-    if letter_count[string[i]]
-      letter_count[string[i]] += 1
-    else
-      letter_count[string[i]] = 1
-    end
+#   while i < string.length
+#     if letter_count[string[i]]
+#       letter_count[string[i]] += 1
+#     else
+#       letter_count[string[i]] = 1
+#     end
 
-    if letter_count[string[i]] > most_frequent_count
-      most_frequent_count = letter_count[string[i]]
-      most_frequent_letter = string[i]
-    end
-    i += 1
-  end
-  return most_frequent_letter
-end
+#     if letter_count[string[i]] > most_frequent_count
+#       most_frequent_count = letter_count[string[i]]
+#       most_frequent_letter = string[i]
+#     end
+#     i += 1
+#   end
+#   return most_frequent_letter
+# end
 
-p frequent_letter("peter piper picked a peck of pickled peppers")
+# p frequent_letter("peter piper picked a peck of pickled peppers")
+
+# def count_votes(array)
+#   i = 0
+#   vote_count = {}
+#   while i < array.length
+#     if vote_count[array[i]]
+#       vote_count[array[i]] += 1
+#     else
+#       vote_count[array[i]] = 1
+#     end
+#     i += 1
+#   end
+#   return vote_count
+# end
+
+# p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
 
 # def hash(menu)
 #   output = 0
