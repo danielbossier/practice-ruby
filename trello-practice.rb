@@ -1125,8 +1125,12 @@ p common_prefix
 
 # p count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"])
 
-# def hash(menu)
+# def menu_total(menu)
 #   output = 0
+#   menu.each do |_item, price|
+#     output += price
+#   end
+#   return output
 # end
 
-# p hash([{ "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 }])
+# p menu_total({ "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 })
