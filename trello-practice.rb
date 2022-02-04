@@ -1084,3 +1084,33 @@ p common_prefix
 # end
 
 # p mesh(["a", "b", "c", "d"])
+
+def frequent_letter(string)
+  i = 0
+  letter_count = {}
+  most_frequent_letter = ""
+  most_frequent_count = 0
+
+  while i < string.length
+    if letter_count[string[i]]
+      letter_count[string[i]] += 1
+    else
+      letter_count[string[i]] = 1
+    end
+
+    if letter_count[string[i]] > most_frequent_count
+      most_frequent_count = letter_count[string[i]]
+      most_frequent_letter = string[i]
+    end
+    i += 1
+  end
+  return most_frequent_letter
+end
+
+p frequent_letter("peter piper picked a peck of pickled peppers")
+
+# def hash(menu)
+#   output = 0
+# end
+
+# p hash([{ "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 }])
