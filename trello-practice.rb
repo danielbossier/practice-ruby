@@ -1151,3 +1151,26 @@ p common_prefix
 #                       { title: "best selfie evar!!!", submitted_by: "Patti Q.", likes: 1092 },
 #                       { title: "Mondays are the worst", submitted_by: "Aunty Em", likes: 644 },
 #                     ])
+
+# def two_sum(array)
+#   i1 = 0
+#   output = []
+#   while i1 < array.length
+#     i2 = i1 + 1
+#     while i2 < array.length - 1
+#       if array[i1] + array[i2] == 10
+#         output << array[i1]
+#         output << array[i2]
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#   end
+#   if output != []
+#     return output
+#   else
+#     return false
+#   end
+# end
+
+# p two_sum([1, 2, 3, 4, 5])
