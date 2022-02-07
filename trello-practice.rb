@@ -1193,3 +1193,13 @@ p common_prefix
 # end
 
 # p entire_menu({ "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 })
+
+def etl(array)
+  new_hash = {}
+  array.each do |key|
+    new_hash[key] = 12
+  end
+  return new_hash
+end
+
+p etl(["a", "e", "i", "o", "u"])
