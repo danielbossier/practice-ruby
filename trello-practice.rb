@@ -1183,3 +1183,13 @@ p common_prefix
 # end
 
 # p multiples_three(0)
+
+# def entire_menu(menu)
+#   output = 0
+#   menu.each do |_item, price|
+#     output += price
+#   end
+#   return output
+# end
+
+# p entire_menu({ "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 })
