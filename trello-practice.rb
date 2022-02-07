@@ -1174,3 +1174,12 @@ p common_prefix
 # end
 
 # p two_sum([1, 2, 3, 4, 5])
+
+# def multiples_three(n)
+#   while n < 101
+#     p n
+#     n = n + 3
+#   end
+# end
+
+# p multiples_three(0)
