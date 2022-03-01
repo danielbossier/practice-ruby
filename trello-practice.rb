@@ -1194,12 +1194,25 @@ p common_prefix
 
 # p entire_menu({ "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 })
 
-def etl(array)
-  new_hash = {}
-  array.each do |key|
-    new_hash[key] = 12
-  end
-  return new_hash
-end
+# def etl(array)
+#   new_hash = {}
+#   array.each do |key|
+#     new_hash[key] = 12
+#   end
+#   return new_hash
+# end
 
-p etl(["a", "e", "i", "o", "u"])
+# p etl(["a", "e", "i", "o", "u"])
+
+# def threeandfive(n)
+#   array = []
+#   while n < 1000
+#     if n % 3 == 0 || n % 5 == 0
+#       array << n
+#     end
+#     n += 1
+#   end
+#   return array.sum
+# end
+
+# p threeandfive(1)
