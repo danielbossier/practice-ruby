@@ -1231,3 +1231,20 @@ p common_prefix
 # end
 
 # p collatz(1122)
+
+# def palindrome(n1, n2)
+#   while n1 > 0
+#     while n2 > 0
+#       p output = n1 * n2
+#       if output.to_s == output.to_s.reverse && output > 900000
+#         return output
+#       else
+#         n2 -= 1
+#       end
+#     end
+#     n1 -= 1
+#     n2 = 999
+#   end
+# end
+
+# p palindrome(999, 999)
