@@ -1216,3 +1216,18 @@ p common_prefix
 # end
 
 # p threeandfive(1)
+
+# def collatz(n)
+#   count = 0
+#   while n != 1
+#     if n.even? == true
+#       n = n / 2
+#     else
+#       n = n * 3 + 1
+#     end
+#     count += 1
+#   end
+#   return count
+# end
+
+# p collatz(1122)
