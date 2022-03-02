@@ -1233,18 +1233,19 @@ p common_prefix
 # p collatz(1122)
 
 # def palindrome(n1, n2)
-#   while n1 > 0
-#     while n2 > 0
-#       p output = n1 * n2
-#       if output.to_s == output.to_s.reverse && output > 900000
-#         return output
-#       else
-#         n2 -= 1
+#   dromes = []
+#   while n1 > 99
+#     while n2 > 99
+#       output = n1 * n2
+#       if output.to_s == output.to_s.reverse
+#         dromes << output
 #       end
+#       n2 -= 1
 #     end
 #     n1 -= 1
 #     n2 = 999
 #   end
+#   return dromes.sort[-1]
 # end
 
 # p palindrome(999, 999)
