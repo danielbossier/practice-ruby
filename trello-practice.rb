@@ -1288,3 +1288,47 @@ p common_prefix
 # end
 
 # p largestnumber([5, 17, -4, 20, 10])
+
+# def product(array)
+#   output = array.inject(:*)
+#   return output
+# end
+
+# p product([1, 2, 3, 4])
+
+# def reverse(array)
+#   output = []
+#   i = -1
+#   while i > -array.length - 1
+#     output << array[i]
+#     i -= 1
+#   end
+#   return output
+# end
+
+# p reverse([1, 2, 3, 4, 5])
+
+# def reverse2(array)
+#   output = []
+#   i = -1
+#   array.each do |x|
+#     output << array[i]
+#     i -= 1
+#   end
+#   return output
+# end
+
+# p reverse2([1, 2, 3, 4, 5])
+
+# def skip(array)
+#   i = 0
+#   output = [array[0]]
+#   i = i + array[i]
+#   while i < array.length
+#     output << array[i]
+#     i = i + array[i]
+#   end
+#   return output
+# end
+
+# p skip([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
