@@ -1249,3 +1249,42 @@ p common_prefix
 # end
 
 # p palindrome(999, 999)
+
+# def lessthan100(array)
+#   output = []
+#   i = 0
+#   while i < array.length
+#     if array[i] < 100
+#       output << array[i]
+#     end
+#     i += 1
+#   end
+#   return output
+# end
+
+# p lessthan100([99, 101, 88, 4, 2000, 50])
+
+# def double(array)
+#   i = 0
+#   while i < array.length
+#     array[i] = array[i] * 2
+#     i += 1
+#   end
+#   return array
+# end
+
+# p double([4, 2, 5, 99, -4])
+
+# def largestnumber(array)
+#   i = 0
+#   largest = array[0]
+#   while i < array.length
+#     if array[i] > largest
+#       largest = array[i]
+#     end
+#     i += 1
+#   end
+#   return largest
+# end
+
+# p largestnumber([5, 17, -4, 20, 10])
