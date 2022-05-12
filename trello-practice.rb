@@ -1332,3 +1332,91 @@ p common_prefix
 # end
 
 # p skip([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+
+# def reversestring(string)
+#   i = string.length - 1
+#   output = ""
+#   while i > -1
+#     output += string[i]
+#     i -= 1
+#   end
+#   return output
+# end
+
+# p reversestring("abcdefghijklmnop")
+
+# def findmoney(string)
+#   i = 0
+#   while i < string.length
+#     if string[i] == "$"
+#       return true
+#     end
+#     i += 1
+#   end
+#   return false
+# end
+
+# p findmoney("i hate but i love money i know i know im crazy")
+
+# def alternate_capitals(string)
+#   i = 1
+#   while i < string.length
+#     string[i] = string[i].upcase
+#     i += 2
+#   end
+#   return string
+# end
+
+# p alternate_capitals("hello, how are your porcupines today?")
+
+# def dupe_character(string)
+#   i = 0
+#   output = ""
+#   while i < string.length
+#     if string[i] == string[i + 1]
+#       output += string[i]
+#       return output
+#     end
+#     i += 1
+#   end
+#   return "no dupes"
+# end
+
+# p dupe_character("abcdefghijkloooop")
+
+# def palindrome?(string)
+#   i1 = 0
+#   i2 = string.length - 1
+#   while i1 < string.length / 2
+#     if string[i1] != string[i2]
+#       return false
+#     else
+#       string[i1] == string[i2]
+#       i1 += 1
+#       i2 -= 1
+#     end
+#   end
+#   return true
+# end
+
+# p palindrome?("racecar")
+
+# def hamming(string1, string2)
+#   i = 0
+#   count = 0
+#   while i < string1.length
+#     if string1[i] != string2[i]
+#       count += 1
+#     end
+#     i += 1
+#   end
+#   return count
+# end
+
+# p hamming("ABCDEFG", "ABCXEOG")
+
+# def reverse_words(string)
+#   string.split.reverse.join(" ")
+# end
+
+# p reverse_words("hotdog is sandwich")
