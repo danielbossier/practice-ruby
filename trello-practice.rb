@@ -1451,3 +1451,18 @@ p common_prefix
 # end
 
 # p fizz?(16)
+
+# def fibonacci(n)
+#   n = n - 2
+#   i1 = 0
+#   i2 = 1
+#   output = 0
+#   n.times do
+#     output = i1 + i2
+#     i1 = i2
+#     i2 = output
+#   end
+#   return output
+# end
+
+# p fibonacci(11)
