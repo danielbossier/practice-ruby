@@ -1421,15 +1421,33 @@ p common_prefix
 
 # p reverse_words("hotdog is sandwich")
 
-def is_prime?(n)
-  i = 2
-  while i < n && n > 1
-    if n % i == 0
-      return "no"
-    end
-    i += 1
-  end
-  return "yes"
-end
+# def is_prime?(n)
+#   i = 2
+#   while i < n && n > 1
+#     if n % i == 0
+#       return "no"
+#     end
+#     i += 1
+#   end
+#   return "yes"
+# end
 
-p is_prime?(19)
+# p is_prime?(19)
+
+# def fizz?(n)
+#   i = 1
+#   while i <= n
+#     if i % 3 == 0 && i % 5 == 0
+#       p "FIZZBUZZ"
+#     elsif i % 3 == 0 && i % 5 != 0
+#       p "FIZZ"
+#     elsif i % 5 == 0 && i % 3 != 0
+#       p "BUZZ"
+#     else
+#       p i
+#     end
+#     i += 1
+#   end
+# end
+
+# p fizz?(16)
