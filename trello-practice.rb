@@ -1420,3 +1420,16 @@ p common_prefix
 # end
 
 # p reverse_words("hotdog is sandwich")
+
+def is_prime?(n)
+  i = 2
+  while i < n && n > 1
+    if n % i == 0
+      return "no"
+    end
+    i += 1
+  end
+  return "yes"
+end
+
+p is_prime?(19)
