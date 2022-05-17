@@ -1478,3 +1478,17 @@ p common_prefix
 # end
 
 # p leap_year(1900)
+
+# def multiplesthreefive()
+#   i = 1
+#   count = []
+#   while i < 1001
+#     if i % 3 == 0 || i % 5 == 0
+#       count << i
+#     end
+#     i += 1
+#   end
+#   return count.sum
+# end
+
+# p multiplesthreefive
