@@ -1507,3 +1507,21 @@ p common_prefix
 # end
 
 # p collatz(345)
+
+# def largest_palindrome(n1, n2)
+#   list = []
+#   while n1 > 99
+#     while n2 > 99
+#       output = n1 * n2
+#       if output.to_s == output.to_s.reverse
+#         list << output
+#       end
+#       n2 -= 1
+#     end
+#     n1 -= 1
+#     n2 = 999
+#   end
+#   return list.sort[-1]
+# end
+
+# p largest_palindrome(999, 999)
