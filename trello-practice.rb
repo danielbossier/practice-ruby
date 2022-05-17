@@ -1466,3 +1466,15 @@ p common_prefix
 # end
 
 # p fibonacci(11)
+
+# def leap_year(n)
+#   if n % 400 == 0
+#     return "yes"
+#   elsif n % 4 == 0 && n % 100 != 0
+#     return "yes"
+#   else
+#     return "no"
+#   end
+# end
+
+# p leap_year(1900)
