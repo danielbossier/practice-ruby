@@ -1525,3 +1525,20 @@ p common_prefix
 # end
 
 # p largest_palindrome(999, 999)
+
+# def meshone(array1, array2)
+#   output = []
+#   i1 = 0
+#   i2 = 0
+#   while i1 < array1.length
+#     while i2 < array2.length
+#       output << array1[i1] + array2[i2]
+#       i2 += 1
+#     end
+#     i1 += 1
+#     i2 = 0
+#   end
+#   return output
+# end
+
+# p meshone(["a", "b", "c"], ["d", "e", "f", "g"])
