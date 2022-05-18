@@ -1561,3 +1561,22 @@ p common_prefix
 # end
 
 # p meshtwo(["a", "b", "c", "d"])
+
+# def largestproduct(array)
+#   output = 0
+#   i1 = 0
+#   i2 = 0
+#   while i1 < array.length
+#     while i2 < array.length
+#       if array[i1] * array[i2] > output && array[i1] != array[i2]
+#         output = array[i1] * array[i2]
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#     i2 = 0
+#   end
+#   return output
+# end
+
+# p largestproduct([5, -2, 1, -9, -7, 2, 6])
