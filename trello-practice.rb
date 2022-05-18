@@ -1526,7 +1526,7 @@ p common_prefix
 
 # p largest_palindrome(999, 999)
 
-# def meshone(array1, array2)
+# def mesh_one(array1, array2)
 #   output = []
 #   i1 = 0
 #   i2 = 0
@@ -1541,9 +1541,9 @@ p common_prefix
 #   return output
 # end
 
-# p meshone(["a", "b", "c"], ["d", "e", "f", "g"])
+# p mesh_one(["a", "b", "c"], ["d", "e", "f", "g"])
 
-# def meshtwo(array)
+# def mesh_two(array)
 #   output = []
 #   i1 = 0
 #   i2 = 1
@@ -1560,9 +1560,9 @@ p common_prefix
 #   return output
 # end
 
-# p meshtwo(["a", "b", "c", "d"])
+# p mesh_two(["a", "b", "c", "d"])
 
-# def largestproduct(array)
+# def largest_product(array)
 #   output = 0
 #   i1 = 0
 #   i2 = 0
@@ -1579,7 +1579,7 @@ p common_prefix
 #   return output
 # end
 
-# p largestproduct([5, -2, 1, -9, -7, 2, 6])
+# p largest_product([5, -2, 1, -9, -7, 2, 6])
 
 # def two_sum(array)
 #   output = []
@@ -1601,3 +1601,22 @@ p common_prefix
 # end
 
 # p two_sum([2, 5, 3, 1, 0, 11])
+
+# def sorted_arrays(array1, array2) THIS METHOD ISN'T WORKING YET, STILL TINKERING
+#   i1 = 0
+#   i2 = 0
+#   while i1 < array1.length
+#     while i2 < array2.length
+#       i3 = i1 + 1
+#       if array1[i1] < array2[i2] && array1[i3] > array2[i2]
+#         array1.insert(1, array2[i2])
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#     i2 = 1
+#   end
+#   return array1
+# end
+
+# p sorted_arrays([1, 5, 8], [6, 9])
