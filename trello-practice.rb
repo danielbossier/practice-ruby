@@ -1580,3 +1580,24 @@ p common_prefix
 # end
 
 # p largestproduct([5, -2, 1, -9, -7, 2, 6])
+
+# def two_sum(array)
+#   output = []
+#   i1 = 0
+#   i2 = 1
+#   while i1 < array.length
+#     while i2 < array.length
+#       if array[i1] + array[i2] == 10 && array[i1] != array[i2]
+#         output << array[i1]
+#         output << array[i2]
+#         return output
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#     i2 = 1
+#   end
+#   return false
+# end
+
+# p two_sum([2, 5, 3, 1, 0, 11])
