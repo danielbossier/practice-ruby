@@ -71,19 +71,19 @@
 # Input: [5, 17, -4, 20, 12]
 # Output: 20
 
-# def max_number(array)
-#   output = 0
-#   i = 0
-#   while i < array.length
-#     if array[i] > output
-#       output = array[i]
-#     end
-#     i += 1
-#   end
-#   return output
-# end
+def max_number(array)
+  output = 0
+  i = 0
+  while i < array.length
+    if array[i] > output
+      output = array[i]
+    end
+    i += 1
+  end
+  return output
+end
 
-# p max_number([5, 17, -4, 20, 12])
+p max_number([5, 17, -4, 20, 12])
 
 # Write a function that accepts an array of numbers and returns the product of all the numbers.
 
