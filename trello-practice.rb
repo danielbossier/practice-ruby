@@ -19,29 +19,43 @@
 
 # p sum ([1, 2, 3, 4])
 
+
 # Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
 
 # Input: [99, 101, 88, 4, 2000, 50]
 # Output: [99, 88, 4, 50]
 
-def less_than_100(array)
-  output = []
-  i = 0
-  while i < array.length
-    if array[i] < 100
-      output << array[i]
-    end
-    i += 1
-  end
-  return output
-end
+# def less_than_100(array)
+#   output = []
+#   i = 0
+#   while i < array.length
+#     if array[i] < 100
+#       output << array[i]
+#     end
+#     i += 1
+#   end
+#   return output
+# end
 
-p less_than_100([99, 101, 88, 4, 2000, 50])
+# p less_than_100([99, 101, 88, 4, 2000, 50])
 
 # Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
 
 # Input: [4, 2, 5, 99, -4]
 # Output: [8, 4, 10, 198, -8]
+
+# def double(array)
+#   output = []
+#   i = 0
+#     while i < array.length
+#       output << (array[i] * 2)
+#       i += 1
+#     end
+#   return output
+# end
+
+# p double([8, 4, 10, 198, -8])
+
 
 =begin
   define a function
