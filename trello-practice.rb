@@ -56,7 +56,6 @@
 
 # p double([8, 4, 10, 198, -8])
 
-
 =begin
   define a function
   setting up an output array
