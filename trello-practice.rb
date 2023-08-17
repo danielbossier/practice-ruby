@@ -180,6 +180,31 @@
   call function
 =end
 
+
+
+def money_hunt(string)
+  i = 0
+  while i < string.length
+    if string[i] == "$"
+      return true
+    end
+    i += 1
+  end
+  return false
+end
+
+p money_hunt("ab$cdefghijklmnopqrstuvwxyz")
+
+
+
+
+
+
+
+
+
+
+
 # def money_hunt(string)
 #   i = 0
 #   while i < string.length
