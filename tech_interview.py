@@ -54,18 +54,18 @@
 #         if no, then continue to next step in iteration
 # initially index1 0 and index2 index1 + 1
 
-def _largest_product(array):
-    i1 = 0
-    i2 = 1
-    output = array[i1] * array[i2]
-    while i1 < len(array):
-        while i2 < len(array):
-            if array[i1] * array[i2] > output:
-                output = array[i1] * array[i2]
-            i2 += 1        
-        i1 += 1
-        i2 = i1 + 1
+# def _largest_product(array):
+#     i1 = 0
+#     i2 = 1
+#     output = array[i1] * array[i2]
+#     while i1 < len(array):
+#         while i2 < len(array):
+#             if array[i1] * array[i2] > output:
+#                 output = array[i1] * array[i2]
+#             i2 += 1        
+#         i1 += 1
+#         i2 = i1 + 1
 
-    return output
+#     return output
 
-print(_largest_product([5, -2, 1, -9, -7, 2, 6]))
+# print(_largest_product([5, -2, 1, -9, -7, 2, 6]))
