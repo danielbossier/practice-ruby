@@ -182,27 +182,18 @@
 
 
 
-def money_hunt(string)
-  i = 0
-  while i < string.length
-    if string[i] == "$"
-      return true
-    end
-    i += 1
-  end
-  return false
-end
+# def money_hunt(string)
+#   i = 0
+#   while i < string.length
+#     if string[i] == "$"
+#       return true
+#     end
+#     i += 1
+#   end
+#   return false
+# end
 
-p money_hunt("ab$cdefghijklmnopqrstuvwxyz")
-
-
-
-
-
-
-
-
-
+# p money_hunt("abcdefghijklmnopqrstuvwxyz")
 
 
 # def money_hunt(string)
